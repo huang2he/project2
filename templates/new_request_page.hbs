@@ -1,0 +1,116 @@
+<div class="relative container z-40" id="page-container">
+  <div class="row">
+
+
+    <div class="col flex flex-column">
+
+
+<nav class="sub-nav">
+  {{breadcrumbs}}
+  
+</nav>
+
+<h1 class="page-header">
+  {{t 'submit'}} a ticket
+  {{#if follow_up}}
+    <span class="follow-up-hint">
+      {{follow_up}}
+    </span>
+  {{/if}}
+</h1>
+
+<div class="form">
+  {{request_form}}
+</div>
+
+{{chat}}
+<!--submit a request修改为submit a ticket-->
+<script type="text/javascript">
+  $('li[title="Submit a request"]').html('Submit a ticket');
+  $('#request_description').next().html('Please enter the details of your issue. A member of our support staff will respond as soon as possible.');
+</script>
+
+
+    </div>
+
+ 
+    
+    <aside class="lg:col-6">
+          
+          <div class="lg:mt-10">
+
+
+            
+            
+            <div class="bg-gray-300 border-radius px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 class="lt-footer-submit-ticket__subtitle"><strong>Check known solutions before contacting</strong></h2>
+                  
+                  <li class = "lt-footer-submit-ticket__subtitle"><a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/articles/8405720646297-Editor-Recommended" target="_blank">General issue (configuration issue)</a></li>
+                  <li class = "lt-footer-submit-ticket__subtitle"><a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/articles/8931293306777-audio-issue-collection" target="_blank">Audio issue (no voice/one way audio/hang up issue)</a></li>
+                  <li class = "lt-footer-submit-ticket__subtitle"><a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/articles/8931312882201-feature-failure-issue-collection" target="_blank">Feature failure issue (auto provision/trunk drop/integration)</a></li>
+                  <li class = "lt-footer-submit-ticket__subtitle"><a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/sections/360002379514-Linkus-Related-Issue" target="_blank">Linkus issue (audio issue/connect server failed)</a></li>
+                  <li class = "lt-footer-submit-ticket__subtitle"><a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/articles/8931394022553-analog-issue-collection" target="_blank">Analog issue (caller ID/DTMF/GSM Module)</a></li>
+                  
+                  
+            </div>  
+            
+            <div class="bg-gray-400 border-radius py-4 px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 class="lt-footer-submit-ticket__subtitle"><strong>What information should be included？</strong></h2>   
+                  <li class = "lt-footer-submit-ticket__subtitle">[super important] Time and date the problem occurred</li>
+                  <li class = "lt-footer-submit-ticket__subtitle">[super important] Caller ID & Callee ID</li>
+                  <li class = "lt-footer-submit-ticket__subtitle">[super important] Enable sip debug in systemlog</li>
+                  <li class = "lt-footer-submit-ticket__subtitle">Log files (this will ensure a faster processing time)</li>   
+                  <li class = "lt-footer-submit-ticket__subtitle">Steps a support engineer should follow to reproduce the issue</li>  
+
+                  
+                  
+            </div>  
+<!--beta plan提醒结束-->              
+<!-- <h1 class="lt-footer-submit-ticket__subtitle">Q3 registration and new feature preview is now open！</h1>
+                  <a href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature" target="_blank"><p class = "lt-footer-submit-ticket__subtitle" ><strong>→click here to check←</strong></p></a> -->
+
+<!--popular article&video提醒开始-->    
+            
+
+                  
+
+            
+            
+ <div class="bg-gray-200 border-radius  px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 ><strong>Don't know how to get logs?</strong></h2>
+               
+              <iframe width=100% height="257px" src="https://www.youtube.com/embed/Je_sKwaHnRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+            </div>  
+            
+            
+             <div class="bg-gray-200 border-radius  px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 ><strong>Necessary attachments</strong></h2>
+                  
+               <li>call issue -- wireshark trace & system log</li>
+               <li>trunk issue -- wireshark trace & system log</li>
+               <li>function issue -- wireshark trace & system log</li>
+               <li>Linkus issue -- linkus client log & system log</li>
+               <li>Analog issue -- wireshark trace & port monitor file</li>
+                 
+            </div>  
+            
+           
+            
+            
+        </div>
+
+      
+
+<!--popular article&video提醒结束-->         
+      
+        </aside>
+
+  
+   </div> 
+
+  </div> 

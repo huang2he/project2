@@ -1,0 +1,976 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<section class="hero-unit search-box">
+    <a href="https://support.yeastar.com/hc/en-us/articles/8897587589017-banner-redirect" target="_blank" class="ycm-img"><img src="{{asset 'Troubleshooting_support_banner.png'}}" alt="YCM" ></a>
+  {{search}}
+</section>
+
+<div class="flex flex-first flex-wrap  mb-4 justify-content-center" style="margin-top: -2rem">
+  
+<div class="flex flex-wrap align-items-center">
+  
+ 
+    
+  <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://support.yeastar.com/hc/en-us/search?query=wireshark" target="_blank" title="">wireshark</a> 
+  </div>
+  
+    
+  <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://support.yeastar.com/hc/en-us/search?query=contact" target="_blank" title="">contact</a> 
+  </div>
+  
+  <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://support.yeastar.com/hc/en-us/search?query=Linkus" target="_blank" title="">linkus</a>
+  </div>
+
+  <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://support.yeastar.com/hc/en-us/search?query=app" target="_blank" title="">app</a>
+  </div>
+  
+    <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://support.yeastar.com/hc/en-us/search?query=api" target="_blank" title="">api</a>
+  </div>
+  
+      <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://support.yeastar.com/hc/en-us/search?query=ssh" target="_blank" title="">ssh</a>
+  </div>
+  
+    <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://support.yeastar.com/hc/en-us/search?query=sms" target="_blank" title="">sms</a>
+  </div>
+   
+  <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://attendee.gotowebinar.com/rt/7023724683332366092?source=communityhome" target="_blank" title="">Webinar-Cloud PBX</a> 
+  </div>
+    
+  <div class="flex align-items-center m-1">
+      <a class="inline-block text-inherit badge rounded px-3 py-2"  
+      href="https://attendee.gotowebinar.com/rt/3862920124057658381?source=communityhome" target="_blank" title="">Webinar-Security</a>
+  </div>
+</div>
+
+</div>
+
+
+<!--
+
+<div class="alert alert-warning alert-dismissible border-left-6 pr-3" style="" role="alert" data-word-count="24" data-p-count="1" il_cc1="1">
+<h1 style="color: #cb6e17 ; font-size:20px"><strong>Announcement Date: </strong>2022/05/26  <strong>         Related Devices: </strong> PSE </h1>
+<h1 style="color: #cb6e17 ; font-size:20px"><strong>This is a test, please ignore it</strong></h1>
+</div> 
+
+
+<div class="lt-container lt-mb-9 lt-pt-5" >
+      <div class="lt-container-inner">
+        <section class="lt-footer-submit-ticket lt-px-5 lt-py-7">
+          <div class="h2 lt-footer-submit-ticket__title">
+            
+              我们正在放假 
+            
+          </div>
+          <div class="h3 lt-footer-submit-ticket__subtitle">
+            
+             From Date1 to Date2
+            
+          </div>
+         
+        </section>
+      </div>
+    </div>
+
+<!--放假banner结束-->
+
+
+
+
+
+
+<!--上区块-->
+
+
+<div class="relative container z-40" id="page-container">
+  <div class="row">
+
+
+    <div class="col flex flex-column">
+<!--helpful links-->    
+        <div class="custom-blocks bg-custom-blocks" id="custom-blocks"><div class="text-left">
+          <h2 class="inline-flex align-items-baseline mt-6">
+            <template x-if="src">
+              <img class="svg-icon mr-2" src="//theme.zdassets.com/theme_assets/10132367/0ec63b140374ba704a58fa0c743cb357683313dd.png" alt="" aria-hidden="true" :src="src">
+            </template>
+              Helpful links
+            </h2>
+        <ul class="list-unstyled row row-sm justify-content-start">
+          
+            
+                      
+          <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/create_a_ticket.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                  <h3 class="m-0">
+                     <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="/hc/en-us/requests/new" target="_blank">
+                          Create a Ticket
+                        </a>
+                      </h3>
+                  <p class="mt-3 mb-auto">Submit a request to our team to get answers</p>
+                </div>
+              </div>
+            </li>
+          
+          
+            <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                  <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/video.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                  <h3 class="m-0">
+                      <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://www.youtube.com/c/YeastarTechnicalChannel" target="_blank">
+                          Videos
+                        </a>
+                      </h3>
+                  
+                  <p class="mt-3 mb-auto">
+                   Learn quickly with our range of video tutorials
+                   </p>
+                  </div>
+              </div>
+            </li>
+          
+
+          <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                  <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/documents.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                    <h3 class="m-0">
+                        <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://www.yeastar.com/resources/datasheet/" target="_blank">
+                          Datasheets
+                        </a>
+                  </h3>
+                  <p class="mt-3 mb-auto">
+                   Product details such as features and specifications
+                   </p>
+                   </div>
+              </div>
+            </li>
+          
+                           
+          <li class="col-12 -mb-1px md:col-6">
+            <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+              <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/change_log.svg" style="height: 60px; width: auto;">
+              <div class="media-body">
+                <h3 class="m-0">
+                  <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/articles/7666843823001-change-log" target="_blank"> Change log
+                  </a>
+                 </h3>
+                <p class="mt-3 mb-auto">
+                                Update time：2022/08/10
+                              </p>
+              </div>
+            </div>
+          </li>
+          
+          
+          
+            <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                
+                  <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/announcements.svg" style="height: 60px; width: auto;">
+                
+                <div class="media-body">
+                  
+                    <h3 class="m-0">
+                      
+                        <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/sections/203747458-Announcements" target="_blank">
+                          Announcements
+                        </a>
+                      
+                    </h3>
+                  
+                  
+                    <p class="mt-3 mb-auto">
+                      
+                        Keep up to date with the latest information
+                      
+                    </p>
+                  
+                </div>
+              </div>
+            </li>
+          
+                                
+          <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/editor_recommended.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/articles/8405720646297-Editor-Recommended" target="_blank">
+                                Editor Recommended 
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                A collection of the most popular and highest quality articles
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+          
+        </ul>
+      </div></div>
+      
+<!--helpful links结束--> 
+
+      
+<!--community开始-->
+
+ <div class="content-blocks bg-content-blocks" id="content-blocks">
+          <div class="text-left py-4">
+            
+              
+
+              
+                <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['content-blocks-heading'] }">
+                  <template x-if="src">
+                    <img class="svg-icon mr-2" src="//theme.zdassets.com/theme_assets/10132367/0ec63b140374ba704a58fa0c743cb357683313dd.png" alt="" aria-hidden="true" :src="src">
+                  </template>
+                  
+                    Voice of Customer
+                  
+                </h2>
+              
+
+              
+              
+                <ul class="list-unstyled row row-sm justify-content-start">
+                
+
+                  <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Creating content" data-asset="image" data-asset-id="category-4416352230161" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/comminity.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/community/topics" target="_blank">
+                                Community
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                Give and receive helpful advice in our forum
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                  
+                  <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Creating content" data-asset="image" data-asset-id="category-4416352230161" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/community_ideas.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/community/topics/7090317662873-Community-Ideas" target="_blank">
+                                Community Ideas
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                Share and vote feature improvements for Yeastar PBX
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                  
+                  
+                  
+                    </ul>
+            
+          </div>
+        </div>      
+      
+<!--community结束-->
+      
+
+<!--broswe topics-->   
+      
+      
+        <div class="content-blocks bg-content-blocks" id="content-blocks">
+          <div class="text-left py-4">
+            
+              
+
+              
+                <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['content-blocks-heading'] }">
+                  <template x-if="src">
+                    <img class="svg-icon mr-2" src="//theme.zdassets.com/theme_assets/10132367/0ec63b140374ba704a58fa0c743cb357683313dd.png" alt="" aria-hidden="true" :src="src">
+                  </template>
+                  
+                    Additional Resources
+                  
+                </h2>
+              
+
+              
+              
+                <ul class="list-unstyled row row-sm justify-content-start">
+                  
+                    
+                      <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Getting started" data-asset="image" data-asset-id="category-4416348154641" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/beta_plan.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/subscriptions" target="_blank">
+                                Beta Plan
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                Participate in beta plan and get a sneak preview of the new features
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    
+                  
+                    
+                      <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Design and styling" data-asset="image" data-asset-id="category-4416376561809" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/webinar.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://www.yeastar.com/webinars/#ts" target="_blank">
+                                Webinar
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                Improve your troubleshooting skills by attending technical webinar
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    
+                                        
+                  <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/checklists.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/6395931556377-Checklist" target="_blank">
+                                Checklists
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                Handy and friendly checklists for common issues
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    
+                      
+                    
+                   <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/scripts_and_tools.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/6056074520729-Marketplace" target="_blank">
+                                Scripts and Tools
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                Download custom scripts and tools developed by Support Team
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    
+                                     
+                  <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/dedicated_firmware.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/7061713681433-Dedicated-Firmware" target="_blank">
+                                Dedicated Firmware
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                Download firmwares with special features or specific patches
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+
+                  <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/itsp_configuration_guide.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                  <h3 class="m-0">
+                     <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/6691649084441-ITSP" target="_blank">
+                          ITSP Configuration Guide
+                        </a>
+                      </h3>
+                   <p class="mt-3 mb-auto">Learn how to configure your SIP trunk with different ITSP</p>
+                </div>
+              </div>
+            </li>
+                    </ul>
+          </div>
+        </div>
+      
+     
+
+ <div class="content-blocks bg-content-blocks" id="content-blocks">
+          <div class="text-left py-4">
+            
+              
+
+              
+                <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['content-blocks-heading'] }">
+                  <template x-if="src">
+                    <img class="svg-icon mr-2" src="//theme.zdassets.com/theme_assets/10132367/0ec63b140374ba704a58fa0c743cb357683313dd.png" alt="" aria-hidden="true" :src="src">
+                  </template>
+                  
+                    Regional Issues
+                  
+                </h2>
+              
+
+              
+              
+                <ul class="list-unstyled row row-sm justify-content-start">
+                  
+                    
+                      
+                    
+                    
+                  
+                   <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/regional_issues.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/7733228401433-Germany" target="_blank">
+                                Germany
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                hot issues/typical issues/FAQ
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+
+                                     
+                  <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/regional_issues.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/7733246642201-Italy" target="_blank">
+                                Italy
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                hot issues/typical issues/FAQ
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                  
+                  
+                  
+                    </ul>
+            
+          </div>
+        </div>
+
+
+              
+<!--knowledge base-->  
+   <div class="custom-blocks bg-custom-blocks" id="custom-blocks"><div class="text-left">
+          <h2 class="inline-flex align-items-baseline mt-6">
+            <template x-if="src">
+              <img class="svg-icon mr-2" src="//theme.zdassets.com/theme_assets/10132367/0ec63b140374ba704a58fa0c743cb357683313dd.png" alt="" aria-hidden="true" :src="src">
+            </template>
+              Knowledge Base
+            </h2>
+        <ul class="list-unstyled row row-sm justify-content-start">
+          
+            <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                  <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/p_series_pbx.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                    <h3 class="m-0">
+                        <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/1500000169682-P-Series-PBX" target="_blank">
+                          P-Series PBX
+                        </a>
+                  </h3>
+                  <p class="mt-3 mb-auto">
+                   PAE-PSE-PCE
+                   </p>
+                   </div>
+              </div>
+            </li>
+          
+            <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                  <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/s_series_pbx.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                  <h3 class="m-0">
+                      <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/202596968-S-Series-PBX" target="_blank">
+                          S-Series PBX
+                        </a>
+                      </h3>
+                  
+                  <p class="mt-3 mb-auto">
+                   S412-S20-S50-S100-S300
+                   </p>
+                  </div>
+              </div>
+            </li>
+                
+          
+            <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/gateways.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                  <h3 class="m-0">
+                     <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/115002438008-VoIP-Gateways" target="_blank">
+                          VoIP Gateways
+                        </a>
+                      </h3>
+                   <p class="mt-3 mb-auto">TA-TB-TE-TG</p>
+                </div>
+              </div>
+            </li>
+          
+          
+                    
+          <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/linkus.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                  <h3 class="m-0">
+                     <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/8044307423769-Linkus" target="_blank">
+                          Linkus
+                        </a>
+                      </h3>
+                   <p class="mt-3 mb-auto">PC-Webclient-mobile</p>
+                </div>
+              </div>
+            </li>
+          
+            
+          <li class="-mb-1px col-12 md:col-6">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                <img class="mr-5" alt="" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/troubleshooting.svg" style="height: 60px; width: auto;">
+                <div class="media-body">
+                  <h3 class="m-0">
+                       <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/360000719373-Troubleshooting" target="_blank">
+                          Troubleshooting
+                        </a>
+                    </h3>
+                  <p class="mt-3 mb-auto">Troubleshoot other products</p>
+                  </div>
+              </div>
+            </li>
+        
+            
+        </ul>
+      </div></div>     
+<!--knowledge base结束-->        
+
+
+<!--coming soon-->  
+         <div class="content-blocks bg-content-blocks" id="content-blocks">
+          <div class="text-left py-4">
+            
+              
+
+              
+                <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['content-blocks-heading'] }">
+                  <template x-if="src">
+                    <img class="svg-icon mr-2" src="//theme.zdassets.com/theme_assets/10132367/0ec63b140374ba704a58fa0c743cb357683313dd.png" alt="" aria-hidden="true" :src="src">
+                  </template>
+                  
+                    Coming soon
+                  
+                </h2>
+              
+
+              
+              
+                <ul class="list-unstyled row row-sm justify-content-start">
+                  
+                    
+                      
+                    
+
+                  
+                                     
+                  <li class="col-12 -mb-1px md:col-6">
+                          <div class="media py-6 px-3 border-top border-bottom h-full text-base transition-fast hover:text-secondary">
+                          
+                            <img class="mr-5" alt="Guides and resources" data-asset="image" data-asset-id="category-4416376562961" src="https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/icons/regional_issues.svg" style="height: 60px; width: auto;">
+                          
+                          <div class="media-body">
+                            <h3 class="m-0">
+                              <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://support.yeastar.com/hc/en-us/categories/7767947599129-Australia-New-Zealand" target="_blank">
+                                Australia/New Zealand
+                              </a>
+                            </h3>
+                            
+                              <p class="mt-3 mb-auto">
+                                hot issues/typical issues/FAQ
+                              </p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                  
+                  
+                  
+                    </ul>
+            
+          </div>
+        </div>
+<!--coming soon结束-->
+
+
+
+    </div>
+<!--上区块-->
+    
+    
+    
+<!--右侧-->
+    <aside class="lg:col-4">
+          
+          <div class="lg:mt-8">
+  <!--节假日提醒          
+<div class="bg-warning border-radius py-4 px-6 mb-6 shadow-md">
+                  <h1 class="lt-footer-submit-ticket__subtitle"><strong>Holiday Notice!!!</strong></h1>
+                  <h2 class="lt-footer-submit-ticket__subtitle"><strong>International Labour day</strong></h2>
+                  <h3 class = "lt-footer-submit-ticket__subtitle"><strong>2022/04/30-2022/05/04</strong></h3>
+       </div>   --> 
+
+<!--beta plan提醒开始
+             <div class="bg-gray-200 border-radius mb-6 shadow-md" >
+            <iframe width=100% height=337px src="https://www.youtube.com/embed/GG_bkwhhE4o">
+</iframe>
+            </div>
+              -->  
+            
+            
+            
+
+            
+<div class="bg-gray-200 border-radius mb-6 shadow-md">
+<div class="swiper-list-youtube">
+  
+<script>
+	   console.time();
+   let imgArr = [
+     {
+       url: 'https://youtu.be/L_AWjX6s7MM',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/API.png'
+     }, 
+       {
+       url: 'https://www.youtube.com/watch?v=sku-4Kgzu1g',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/wireshark.jpg'
+     }, 
+     {
+       url: 'https://www.youtube.com/watch?v=GG_bkwhhE4o&list=PLzIH8taGDD_46yOnaPwT7iusaavlvep-5&index=3',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/community.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=7LTrNDvq_Xo&list=PLzIH8taGDD_4g_veF0dWPCu9BrIG9OfCX',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/webrtc.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=jwEePKqtypc&list=PLzIH8taGDD_7uxapvsSGHMD_qQFoqy_We',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/vim.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=4TBd995yyos&list=PLzIH8taGDD_47QgL-jW8pGKsr-kPLNsoB',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tcp.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=VqowfPRN6ag&list=PLzIH8taGDD_6y78r7Ecbbnjga5ZmRS_bS&index=2',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/database.png'
+     }
+   ];
+
+   new Swiper({
+     imgArr: imgArr,
+     aniTIme: 1000,
+     intervalTime: 1000,
+     autoplay: true
+   }).init();
+   console.timeEnd();
+</script>
+  
+    </div>
+  </div>    
+            
+            
+<div class="bg-gray-200 border-radius mb-6 shadow-md">
+<div class="swiper-list-tools">
+  
+<script>
+	   console.time();
+   let imgArr2 = [
+     {
+       url: 'https://support.yeastar.com/hc/en-us/articles/6343424479897-Yeastar-MySMS',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tool1.png'
+     }, 
+       {
+       url: 'https://support.yeastar.com/hc/en-us/articles/6955480099481-Yeastar-Recording-Downloader',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tool2.png'
+     }, 
+     {
+       url: 'https://support.yeastar.com/hc/en-us/articles/9183992040729-Yeastar-PBX-Migration-Tool',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tool3.png'
+     }
+   ];
+
+   
+  new Swipere({
+     imgArr: imgArr2,
+     aniTIme: 1000,
+     intervalTime: 1000,
+     autoplay: true
+   }).init();
+  console.timeEnd();
+</script>
+  
+    </div>
+  </div>    
+            
+            
+            
+            
+            
+            
+        
+            <div class="bg-gray-300 border-radius  px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 class="lt-footer-submit-ticket__subtitle"><strong>Upcoming Webinars</strong></h2>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/3862920124057658381?source=communityhome" target="_blank">2022/08/04 Security related rules</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/7023724683332366092?source=communityhome" target="_blank">2022/08/11 Cloud PBX troubleshooting</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/3862920124057658381?source=communityhome" target="_blank">2022/08/18 Security related rules</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/7023724683332366092?source=communityhome" target="_blank">2022/08/25 Cloud PBX troubleshooting</a>
+            </div>  
+            
+            <div class="bg-gray-400 border-radius py-4 px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 class="lt-footer-submit-ticket__subtitle"><strong>Upcoming Features in Q3</strong></h2>              
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature" target="_blank">Linkus Web Client Audio Conference</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature"  target="_blank">Active Directory Integration (with UP)</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature"  target="_blank">Azure Active Directory Integration (EP)</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature"  target="_blank">Call Flip& Call Switch</a>
+            </div>  
+<!--beta plan提醒结束-->              
+<!-- <h1 class="lt-footer-submit-ticket__subtitle">Q3 registration and new feature preview is now open！</h1>
+                  <a href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature" target="_blank"><p class = "lt-footer-submit-ticket__subtitle" ><strong>→click here to check←</strong></p></a> -->
+
+<!--popular article&video提醒开始-->    
+            
+
+                  
+<div class="bg-gray-200 border-radius py-4 px-6 mb-6 shadow-md">
+  <h2 class="flex align-items-baseline my-4" >Recent activity</h2>
+               
+  <div class="happening-content">
+
+                  
+    <div class="category-tree">
+        
+                    <section class="category">
+          
+                      <!--Recent activity-->
+          
+                      <section class="section" id="happeningRecent">
+                        {{recent_activity scope='community'}}
+          
+                      </section>
+          
+                      <!--Recent activity结束-->
+          
+                     
+        
+                    </section>
+      
+                  </div>
+    </div>
+  </div>
+            
+            
+            <div class="bg-gray-200 border-radius py-4 px-6 mb-6 shadow-md">
+                  <h2 class="flex align-items-baseline my-4">New articles
+                    </h2>
+                
+              <div class="happening-content">
+
+                  
+    <div class="category-tree">
+        
+                    <section class="category">
+          
+
+          
+                      <!--Knowledge base-->
+          
+                      <section class="section" id="happeningFeatured" >
+            
+                        {{recent_articles}}
+                        
+          
+          
+                      </section>
+           
+                      <!--Knowledge base结束-->
+        
+                    </section>
+      
+                  </div>
+    </div>
+</div>
+
+        
+</div>
+      
+
+<!--popular article&video提醒结束-->         
+      
+        </aside>
+
+  </div> 
+</div> 
+
+
+
+
+<!--下区块
+  
+  <div class="contact-blocks" id="contact-blocks"><div class="container py-4">
+        
+          <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['contact-blocks-heading'] }">
+            <template x-if="src">
+              <img class="svg-icon mr-2" src="//theme.zdassets.com/theme_assets/10132367/0ec63b140374ba704a58fa0c743cb357683313dd.png" alt="" aria-hidden="true" :src="src">
+            </template>
+            
+              Get in touch
+            
+          </h2>
+        
+        <ul class="list-unstyled row row-sm justify-content-start">
+          
+            <li class="-mb-1px col-12 md:col-6 lg:col-4">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                
+                  <img class="mr-5" alt="" src="//theme.zdassets.com/theme_assets/10132367/3ec19011a1d3d580f81a4061541e4ead497cbca9.svg" style="height: 40px; width: auto;">
+                
+                <div class="media-body">
+                  
+                    <h3 class="m-0">
+                      
+                        <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="#">
+                          Message us
+                        </a>
+                      
+                    </h3>
+                  
+                  
+                    <p class="mt-3 mb-auto">
+                      
+                        Start a conversation with our team and get the answers you need
+                      
+                    </p>
+                  
+                </div>
+              </div>
+            </li>
+          
+           
+          
+            <li class="-mb-1px col-12 md:col-6 lg:col-4">
+              <div class="media py-6 px-3 border-top border-bottom h-full text-base text-left hover:text-secondary">
+                
+                  <img class="mr-5" alt="" src="//theme.zdassets.com/theme_assets/10132367/ac97851d56c76ea2d56fcbfdfbdc4bf4a56eda12.svg" style="height: 40px; width: auto;">
+                
+                <div class="media-body">
+                  
+                    <h3 class="m-0">
+                      
+                        <a class="link-stretched text-inherit transition-fast hover:no-underline hover:text-secondary" href="https://www.twitter.com">
+                          Find a store
+                        </a>
+                      
+                    </h3>
+                  
+                  
+                    <p class="mt-3 mb-auto">
+                      
+                        Find a location near you for in person service
+                      
+                    </p>
+                  
+                </div>
+              </div>
+            </li>
+          
+        </ul>
+      </div></div>
+<!--下区块-->
+
+<script type="text/javascript">
+  Theme.assets['category-4416348154641'] = "//theme.zdassets.com/theme_assets/10132367/0a8d2bfb25d8ffaab171593aae4dd9d346d8a970.svg";Theme.assets['category-4416376561809'] = "//theme.zdassets.com/theme_assets/10132367/31caa6bfd8a7fd2cfcc1ffe780f081f71108a568.svg";Theme.assets['category-4416352230161'] = "//theme.zdassets.com/theme_assets/10132367/fc6c33769e9e180cc62c626f64d004afe2a0fe96.svg";Theme.assets['category-4416376562961'] = "//theme.zdassets.com/theme_assets/10132367/03327843b338719bb709af64d30addf8399fc3a6.svg";</script>
+
+<script type="text/javascript">document.documentElement.classList.add('home-page');</script>

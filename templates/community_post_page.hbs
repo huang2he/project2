@@ -1,0 +1,335 @@
+<nav class="sub-nav">
+  {{breadcrumbs}}
+  {{search scoped=true}}
+</nav>
+
+<header class="page-header">
+  <span class="post-actions">
+    {{post.actions}}
+    {{#with post.ticket}}
+      <a href="{{url}}" target="_zendesk_lotus" class="escalation-badge">
+        #{{id}}
+      </a>
+    {{/with}}
+  </span>
+  <span class="post-to-community">
+    {{link 'new_post' role='button'}}
+  </span>
+</header>
+
+<div class="main-column">
+
+  <article class="post {{#if post.featured}} post-featured {{/if}} {{#if post.pinned}} post-pinned {{/if}}">
+
+    <div class="post-vote vote">
+      {{#with post}}
+        {{vote 'up' class='vote-up' selected_class='vote-voted'}}
+        {{vote 'sum' class="vote-sum"}}
+        {{vote 'down' class='vote-down' selected_class='vote-voted'}}
+      {{/with}}
+    </div>
+
+    <div class="post-container">
+
+      <div class="post-header">
+        <h1 title="{{post.title}}">{{post.title}}</h1>
+        <div class="post-info">
+          <div class="post-avatar {{#if post.author.agent}} post-avatar-agent {{/if}}">
+           {{#link "user_profile" id=post.author.id class="user-profile"}}
+  <img src="{{post.author.avatar_url}}" alt="Avatar" />
+{{/link}}
+          </div>
+          <div class="post-meta">
+            <strong class="post-author" title="{{post.author.name}}">
+             {{#link "user_profile" id=post.author.id class="user-profile"}}
+  {{post.author.name}}
+{{/link}}
+            </strong>
+            <div class="post-published meta">
+              {{date post.created_at}}
+            </div>
+          </div>
+          <div class="post-status">
+            {{#if post.status}}
+              <span class="post-{{post.status_dasherized}}">{{post.status_name}}</span>
+            {{/if}}
+          </div>
+          <div class="post-follow">{{subscribe}}</div>
+        </div>
+      </div>
+
+      <div class="content-body post-body">{{post.details}}</div>
+
+      <div class="post-share">{{share}}</div>
+
+    </div>
+
+  </article>
+
+  <div class="comment-sorter">
+    {{#each comment_sorters}}
+      <a aria-selected="{{selected}}" href="{{url}}">{{name}}</a>
+    {{/each}}
+  </div>
+
+  <h4 class="comment-heading">
+    {{t 'comments_count' count=post.comment_count}}
+  </h4>
+
+  <ul id="comments" class="comment-list">
+    {{#each comments}}
+      <li id="{{anchor}}" class="comment">
+
+        {{#if official}}
+          <div class="comment-bookmark"></div>
+        {{else}}
+          <div class="comment-vote vote">
+            {{vote 'up' class='vote-up' selected_class='vote-voted'}}
+            {{vote 'sum' class="vote-sum"}}
+            {{vote 'down' class='vote-down' selected_class='vote-voted'}}
+          </div>
+        {{/if}}
+
+        <div class="comment-avatar {{#if author.agent}} comment-avatar-agent {{/if}}">
+        {{#link "user_profile" id=author.id class="user-profile"}}
+  <img src="{{author.avatar_url}}" alt="Avatar" />
+{{/link}}
+        </div>
+
+        <div class="comment-container">
+
+          <header class="comment-header">
+            <strong class="comment-author" title="{{author.name}}">
+            {{#link "user_profile" id=author.id class="user-profile"}}
+  {{author.name}}
+{{/link}}
+            </strong>
+            {{date created_at class='comment-published'}}
+            {{#if official}}
+              <span class="comment-official">{{t 'official_comment'}}</span>
+            {{/if}}
+            {{#if pending}}
+              <span class="comment-pending">{{t 'pending_approval'}}</span>
+            {{/if}}
+          </header>
+
+          <div class="content-body comment-body">{{body}}</div>
+
+          <footer class="comment-footer">
+            <span class="comment-actions">
+              {{#with ticket}}
+                <a href="{{url}}" target="_zendesk_lotus" class="escalation-badge">
+                  #{{id}}
+                </a>
+              {{/with}}
+              {{actions}}
+            </span>
+          </footer>
+
+        </div>
+
+      </li>
+    {{/each}}
+  </ul>
+
+  {{pagination}}
+
+  <div>{{comment_callout}}</div>
+
+  {{#form 'comment' class='comment-form'}}
+    <div class="comment-vote"></div>
+    <div class="comment-avatar">
+      {{user_avatar class='user-avatar'}}
+    </div>
+    <div class="comment-container">
+      {{wysiwyg 'body'}}
+      <div class="comment-form-controls">
+        {{checkbox 'official'}}
+        {{label 'official'}}
+        {{input type='submit'}}
+      </div>
+    </div>
+  {{/form}}
+
+</div>
+
+
+<aside class="article-sidebar side-column">
+    
+  <div class="bg-gray-200 border-radius mb-6 shadow-md">
+<div class="swiper-list-youtube">
+  
+<script>
+	   console.time();
+   let imgArr = [
+     {
+       url: 'https://youtu.be/L_AWjX6s7MM',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/API.png'
+     }, 
+       {
+       url: 'https://www.youtube.com/watch?v=sku-4Kgzu1g',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/wireshark.jpg'
+     }, 
+     {
+       url: 'https://www.youtube.com/watch?v=GG_bkwhhE4o&list=PLzIH8taGDD_46yOnaPwT7iusaavlvep-5&index=3',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/community.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=7LTrNDvq_Xo&list=PLzIH8taGDD_4g_veF0dWPCu9BrIG9OfCX',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/webrtc.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=jwEePKqtypc&list=PLzIH8taGDD_7uxapvsSGHMD_qQFoqy_We',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/vim.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=4TBd995yyos&list=PLzIH8taGDD_47QgL-jW8pGKsr-kPLNsoB',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tcp.png'
+     },
+     {
+       url: 'https://www.youtube.com/watch?v=VqowfPRN6ag&list=PLzIH8taGDD_6y78r7Ecbbnjga5ZmRS_bS&index=2',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/database.png'
+     }
+   ];
+
+   new Swiper({
+     imgArr: imgArr,
+     aniTIme: 1000,
+     intervalTime: 1000,
+     autoplay: true
+   }).init();
+   console.timeEnd();
+</script>
+  
+    </div>
+  </div>    
+            
+            
+<div class="bg-gray-200 border-radius mb-6 shadow-md">
+<div class="swiper-list-tools">
+  
+<script>
+	   console.time();
+   let imgArr2 = [
+     {
+       url: 'https://support.yeastar.com/hc/en-us/articles/6343424479897-Yeastar-MySMS',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tool1.png'
+     }, 
+       {
+       url: 'https://support.yeastar.com/hc/en-us/articles/6955480099481-Yeastar-Recording-Downloader',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tool2.png'
+     }, 
+     {
+       url: 'https://support.yeastar.com/hc/en-us/articles/9183992040729-Yeastar-PBX-Migration-Tool',
+       imgPath: 'https://update-ys2015-alicloud.oss-cn-hongkong.aliyuncs.com/YeastarSupport/supportportal/tool3.png'
+     }
+   ];
+
+   
+  new Swipere({
+     imgArr: imgArr2,
+     aniTIme: 1000,
+     intervalTime: 1000,
+     autoplay: true
+   }).init();
+  console.timeEnd();
+</script>
+  
+    </div>
+  </div>    
+             
+                        <div class="bg-gray-300 border-radius  px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 class="lt-footer-submit-ticket__subtitle"><strong>Upcoming Webinars</strong></h2>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/3862920124057658381?source=communityhome" target="_blank">2022/08/04 Security related rules</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/7023724683332366092?source=communityhome" target="_blank">2022/08/11 Cloud PBX troubleshooting</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/3862920124057658381?source=communityhome" target="_blank">2022/08/18 Security related rules</a>
+                  <a class = "lt-footer-submit-ticket__subtitle" href="https://attendee.gotowebinar.com/rt/7023724683332366092?source=communityhome" target="_blank">2022/08/25 Cloud PBX troubleshooting</a>
+            </div>  
+            
+            <div class="bg-gray-400 border-radius py-4 px-6 mb-6 shadow-md" style="padding-bottom:2rem;padding-top:1rem">
+                               
+                  <h2 class="lt-footer-submit-ticket__subtitle"><strong>Upcoming Features in Q3</strong></h2>              
+                  <a  class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature" target="_blank">Linkus Web Client Audio Conference</a>
+                  <a  class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature"  target="_blank">Active Directory Integration (with UP)</a>
+                  <a  class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature"  target="_blank">Azure Active Directory Integration (EP)</a>
+                  <a  class = "lt-footer-submit-ticket__subtitle" href="https://support.yeastar.com/hc/en-us/subscriptions#newfeature"  target="_blank">Call Flip& Call Switch</a>
+            </div>  
+  
+  <div class="bg-gray-200 border-radius py-4 px-6 mb-6 shadow-md">
+  <h2 class="flex align-items-baseline my-4" >Recent activity</h2>
+               
+  <div class="happening-content">
+
+                  
+    <div class="category-tree">
+        
+                    <section class="category">
+          
+                      <!--Recent activity-->
+          
+                      <section class="section" id="happeningRecent">
+                        {{recent_activity scope='community'}}
+          
+                      </section>
+          
+                      <!--Recent activity结束-->
+          
+                      <!--Knowledge base-->
+          
+                      <section class="section" id="happeningFeatured" style="display:none;">
+            
+                        {{recent_articles}}
+            
+                        <a href="https://support.yeastar.com/hc/en-us/categories/202596968-Knowledge-Base">See more</a>
+          
+                      </section>
+           
+                      <!--Knowledge base结束-->
+        
+                    </section>
+      
+                  </div>
+    </div>
+  </div>
+            
+            
+            <div class="bg-gray-200 border-radius py-4 px-6 mb-6 shadow-md">
+                  <h2 class="flex align-items-baseline my-4">New articles
+                    </h2>
+                
+              <div class="happening-content">
+
+                  
+    <div class="category-tree">
+        
+                    <section class="category">
+          
+                      <!--Recent activity-->
+          
+                      <section class="section" id="happeningRecent" style="display:none;">
+                        {{recent_activity scope='community'}}
+          
+                      </section>
+          
+                      <!--Recent activity结束-->
+          
+                      <!--Knowledge base-->
+          
+                      <section class="section" id="happeningFeatured" >
+            
+                        {{recent_articles}}
+          
+          
+                      </section>
+           
+                      <!--Knowledge base结束-->
+        
+                    </section>
+      
+                  </div>
+    </div>
+</div>
+    
+  
+</aside>
